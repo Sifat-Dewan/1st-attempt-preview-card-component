@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+
+}
+
+.image .img_desktop {
+    margin-top: .29rem;
+    height: 23rem;
+    width: 15rem;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    outline: none;
+}
+
+.image .img_mobile {
+    display: none;
+}
+
+.description {
+    height: 23rem;
+    width: 15rem;
+    background-color: white;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 1.5rem;
+
+}
+
+h4 {
+    font-family: 'Montserrat', serif;
+    font-weight: 500;
+    font-size: .7rem;
+    color: hsl(228, 12%, 48%);
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    line-height: 1;
+    color: hsl(212, 21%, 14%);
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: .7rem;
+    line-height: 1.7;
+    padding: .2rem .2rem;
+    color: hsl(228, 12%, 48%);
+}
+
+.num {
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+}
+
+.a {
+    color: hsl(158, 36%, 37%);
+}
+
+.discount {
+    margin-left: 1rem;
+    text-decoration: line-through;
+}
+
+button {
+    font-family: 'Montserrat', serif;
+    display: flex;
+    width: 12rem;
+    height: 2.3rem;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 6px;
+    border: none;
+    color: white;
+    font-size: .8rem;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+@media screen and (max-width:480px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .image .img_desktop {
+        display: none;
+    }
+
+    .image .img_mobile {
+        display: block;
+        height: 10rem;
+        width: 15rem;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+    }
+
+    .description {
+        height: 15.8rem;
+        width: 15rem;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 8px;
+        padding-top: 1rem;
+        padding-left: 1.3rem;
+    }
+
+    h1 {
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: .55rem;
+    }
+
+    .num {
+        padding: .4rem;
+    }
+
+    button {
+        width: 12.6rem;
+        height: 2rem;
+        font-size: .6rem;
+    }
+}
